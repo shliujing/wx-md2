@@ -1,0 +1,25 @@
+<import src="/hr_album/pages/template/loading.wxml"></import>
+<import src="/hr_album/pages/template/login.wxml"></import>
+<template is="login" data wx:if="{{login}}"></template>
+<block wx:if="{{!login}}">
+    <view class="pagebox">
+        <view class="gb">
+            <canvas canvasId="myCanvas" class="code"></canvas>
+        </view>
+        <text class="stext">开始创作</text>
+        <text class="sdesc">可添加多张图片哦！</text>
+        <form bindsubmit="upform" reportSubmit="true">
+            <button catchtap="chooseimg" class="addbox" formType="submit">
+                <view class="iocbox">
+                    <image class="imgs" src="../../resource/images/add.png"></image>
+                </view>
+                <text class="descss">添加照片</text>
+            </button>
+        </form>
+        <view class="rest-container"></view>
+    </view>
+    <view class="llads">
+        <ad unitId="{{config.llads}}" wx:if="{{config.llads}}"></ad>
+    </view>
+</block>
+<template is="loading" data="{{loading:loading,text:text}}"></template>

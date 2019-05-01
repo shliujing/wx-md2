@@ -1,0 +1,41 @@
+<block wx:if="{{review==1}}">
+    <import src="/hr_album/pages/template/relist.wxml"></import>
+    <template is="relist" data="{{relist:relist}}"></template>
+</block>
+<block wx:if="{{review==2}}">
+    <import src="/hr_album/pages/template/review.wxml"></import>
+    <template is="review" data="{{aclist:aclist}}"></template>
+</block>
+<block wx:if="{{review==0}}">
+    <view class="pagebox">
+        <scroll-view bindscrolltolower="scrolltolower" lowerThreshold="20" scrollTop="{{scrollTop}}" scrollWithAnimation="true" scrollY="true" style="height:{{screenHeight}}px;">
+            <swiper autoplay="{{autoplay}}" class="swiper" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}" wx:if="{{ads.length>0}}">
+                <swiper-item catchtap="hdGoto" data-id="{{index}}" wx:for="{{ads}}" wx:key="unique">
+                    <image class="slide-image" mode="aspectFill" src="{{imgurl}}{{item.thumb}}"></image>
+                </swiper-item>
+            </swiper>
+            <ad style="margin-bottom:20rpx;" unitId="{{llads}}" wx:if="{{llads}}"></ad>
+            <button catchtap="showAlbum" class="{{list_style==1?'listbox':'listbox1'}}" data-id="{{items.id}}" data-skin="{{items.skin}}" wx:for="{{hotlist}}" wx:for-item="items" wx:key="unique">
+                <text class="title" wx:if="{{list_style==1}}">{{items.title}}</text>
+                <image class="bgimg" mode="aspectFill" src="{{imgurl}}{{items.thumb}}"></image>
+                <text class="title" wx:if="{{list_style==2}}">{{items.title}}</text>
+                <image class="avatar" src="{{items.avatar}}"></image>
+                <text class="nickname" wx:if="{{list_style==1}}">{{items.nickname}}</text>
+                <view class="tj">
+                    <image class="tjimg" src="/hr_album/resource/images/ln.png"></image>
+                    <text class="tjsum" wx:if="{{items.click>0}}">{{items.click>100000?'100000+':items.click}}</text>
+                    <image class="tjimg" src="/hr_album/resource/images/shares.png" wx:if="{{items.share>0}}"></image>
+                    <text class="tjsum" wx:if="{{items.share>0}}">{{items.share>100000?'100000+':items.share}}</text>
+                </view>
+            </button>
+        </scroll-view>
+    </view>
+    <button class="kfbtn" openType="contact" wx:if="{{iskf>0}}">
+        <image class="kfimg" src="{{imgurl}}{{kfbg}}" wx:if="{{kfbg}}"></image>
+        <image class="kfimg" src="/hr_album/resource/images/kfbtn.png" wx:else></image>
+    </button>
+    <view class="tag">
+        <em></em>
+        <text>点击按钮制作相册</text>
+    </view>
+</block>

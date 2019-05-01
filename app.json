@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "hr_album/pages/index/index",
+    "hr_album/pages/user/user",
+    "hr_album/pages/user/style",
+    "hr_album/pages/user/save",
+    "hr_album/pages/user/pics",
+    "hr_album/pages/user/music",
+    "hr_album/pages/user/text",
+    "hr_album/pages/user/add",
+    "hr_album/pages/user/cash",
+    "hr_album/pages/pay/pay",
+    "hr_album/pages/show/show",
+    "hr_album/pages/share/share",
+    "hr_album/pages/user/app",
+    "hr_album/pages/user/tlist",
+    "hr_album/pages/user/details",
+    "hr_album/pages/web/index",
+    "hr_album/pages/review/review",
+    "hr_album/pages/zhufu/zhufu"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#373A41",
+    "backgroundColor": "#f2f2f2"
+  },
+  "tabBar": {
+    "color": "#A9B3BD",
+    "selectedColor": "#FD5A87",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "hr_album/pages/index/index",
+        "text": "发现",
+        "iconPath": "hr_album/resource/images/faxian.png",
+        "selectedIconPath": "hr_album/resource/images/faxian_selected.png"
+      },
+      {
+        "pagePath": "hr_album/pages/user/add",
+        "text": "开始创作",
+        "iconPath": "hr_album/resource/images/post.png",
+        "selectedIconPath": "hr_album/resource/images/post.png"
+      },
+      {
+        "pagePath": "hr_album/pages/user/user",
+        "text": "我的",
+        "iconPath": "hr_album/resource/images/my.png",
+        "selectedIconPath": "hr_album/resource/images/my_on.png"
+      }
+    ]
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}
