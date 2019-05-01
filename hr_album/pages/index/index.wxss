@@ -167,7 +167,7 @@
 .swiper {
     width: 100%;
     height: 250rpx;
-    margin-bottom: 30rpx;
+    /* margin-bottom: 30rpx; */
 }
 
 .code {
@@ -213,4 +213,60 @@ button::after {
 .kfimg {
     width: 100%;
     height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.u_list {
+  margin-top:-10px;
+    display: flex;
+    top: 150rpx;
+    height: 70rpx;
+    color: #000;
+    text-align: center;
+    width:98%;
+background-color:white;
+margin:0 auto;
+}
+
+.u_icos {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 5rpx;
+}
+
+.u_list .u_items {
+    display: flex;
+    min-width: 350rpx;
+    height: 70rpx;
+    overflow: hidden;
+    justify-content: center;
+    -webkit-align-items: center;
+}
+
+.u_after {
+    content: '';
+    height: 50rpx;
+    width: 3rpx;
+    margin-top: 10rpx;
+    background-color: #ccc;
+    justify-content: center;
+    -webkit-align-items: center;
+}
+
+.u_text1 {
+    font-size: 25rpx;
+    line-height: 60rpx;
+    letter-spacing: 2rpx;
 }

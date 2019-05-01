@@ -2,18 +2,7 @@
 <template is="login" data wx:if="{{login}}"></template>
 <view class="container" wx:if="{{!login}}">
     <view class="header" style="background-color: #FD5A87;">
-        <image bindtap="systems" class="system_tools" src="../../resource/images/sys.png"></image>
-        <view class="box">
-            <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-            <text class="nickname">{{userInfo.nickName}}</text>
-            <view class="pay" wx:if="{{config.ispay>0}}">
-                <text>余额:</text>
-                <text style="color:#FD5A87;font-size:32rpx;margin-left:5rpx;margin-right:5rpx;">{{fee}}</text>
-                <text style="margin-left:5rpx;">元</text>
-            </view>
-            <form bindsubmit="goto_fromid" reportSubmit="true" wx:if="{{config.ispay>0}}">
-                <button class="mtbtns" formType="submit">余额提现</button>
-            </form>
+        <view class="box">       
             <view class="u_list">
                 <view class="u_items">
                     <image class="u_icos" src="../../resource/images/album.png"></image>

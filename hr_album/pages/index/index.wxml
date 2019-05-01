@@ -1,29 +1,43 @@
 <block wx:if="{{review==1}}">
-    <import src="/hr_album/pages/template/relist.wxml"></import>
-    <template is="relist" data="{{relist:relist}}"></template>
+  <import src="/hr_album/pages/template/relist.wxml"></import>
+  <template is="relist" data="{{relist:relist}}"></template>
 </block>
 <block wx:if="{{review==2}}">
-    <import src="/hr_album/pages/template/review.wxml"></import>
-    <template is="review" data="{{aclist:aclist}}"></template>
+  <import src="/hr_album/pages/template/review.wxml"></import>
+  <template is="review" data="{{aclist:aclist}}"></template>
 </block>
 <block wx:if="{{review==0}}">
-    <view class="pagebox">
-        <scroll-view bindscrolltolower="scrolltolower" lowerThreshold="20" scrollTop="{{scrollTop}}" scrollWithAnimation="true" scrollY="true" style="height:{{screenHeight}}px;">
-            <swiper autoplay="{{autoplay}}" class="swiper" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}" wx:if="{{ads.length>0}}">
-                <swiper-item catchtap="hdGoto" data-id="{{index}}" wx:for="{{ads}}" wx:key="unique">
-                    <image class="slide-image" mode="aspectFill" src="{{imgurl}}{{item.thumb}}"></image>
-                </swiper-item>
-            </swiper>
-            <ad style="margin-bottom:20rpx;" unitId="{{llads}}" wx:if="{{llads}}"></ad>
-            <button catchtap="showAlbum" class="{{list_style==1?'listbox':'listbox1'}}" data-id="{{items.id}}" data-skin="{{items.skin}}" wx:for="{{hotlist}}" wx:for-item="items" wx:key="unique">
-                <text class="title" wx:if="{{list_style==1}}">{{items.title}}</text>
-                <image class="bgimg" mode="aspectFill" src="{{imgurl}}{{items.thumb}}"></image>
-                <text class="title" wx:if="{{list_style==2}}">{{items.title}}</text>
-            </button>
-        </scroll-view>
+  
+  <view class="pagebox">
+    <scroll-view bindscrolltolower="scrolltolower" lowerThreshold="20" scrollTop="{{scrollTop}}" scrollWithAnimation="true" scrollY="true" style="height:{{screenHeight}}px;">
+      <swiper autoplay="{{autoplay}}" class="swiper" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}" wx:if="{{ads.length>0}}">
+        <swiper-item catchtap="hdGoto" data-id="{{index}}" wx:for="{{ads}}" wx:key="unique">
+          <image class="slide-image" mode="aspectFill" src="{{imgurl}}{{item.thumb}}"></image>
+        </swiper-item>
+      </swiper>
+
+       <view class="u_list">
+      <view class="u_items">
+        <image class="u_icos" src="../../resource/images/album.png"></image>
+        <text class="u_text1">我的宝贝</text>
+      </view>
+      <view class="u_after"></view>
+      <view class="u_items">
+        <image class="u_icos" src="../../resource/images/xin.png"></image>
+        <text class="u_text1">小龙人幼儿园</text>
+      </view>
     </view>
-    <button class="kfbtn" openType="contact" wx:if="{{iskf>0}}">
-        <image class="kfimg" src="{{imgurl}}{{kfbg}}" wx:if="{{kfbg}}"></image>
-        <image class="kfimg" src="/hr_album/resource/images/kfbtn.png" wx:else></image>
-    </button>   
+
+      <ad style="margin-bottom:20rpx;" unitId="{{llads}}" wx:if="{{llads}}"></ad>
+      <button catchtap="showAlbum" class="{{list_style==1?'listbox':'listbox1'}}" data-id="{{items.id}}" data-skin="{{items.skin}}" wx:for="{{hotlist}}" wx:for-item="items" wx:key="unique">
+        <text class="title" wx:if="{{list_style==1}}">{{items.title}}</text>
+        <image class="bgimg" mode="aspectFill" src="{{imgurl}}{{items.thumb}}"></image>
+        <text class="title" wx:if="{{list_style==2}}">{{items.title}}</text>
+      </button>
+    </scroll-view>
+  </view>
+  <button class="kfbtn" openType="contact" wx:if="{{iskf>0}}">
+    <image class="kfimg" src="{{imgurl}}{{kfbg}}" wx:if="{{kfbg}}"></image>
+    <image class="kfimg" src="/hr_album/resource/images/kfbtn.png" wx:else></image>
+  </button>
 </block>
