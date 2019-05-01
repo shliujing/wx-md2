@@ -22,7 +22,7 @@
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "",
-    "navigationBarBackgroundColor": "#373A41",
+    "navigationBarBackgroundColor": "#FFDA44",
     "backgroundColor": "#f2f2f2"
   },
   "tabBar": {
@@ -33,15 +33,27 @@
     "list": [
       {
         "pagePath": "hr_album/pages/index/index",
-        "text": "发现",
-        "iconPath": "hr_album/resource/images/faxian.png",
-        "selectedIconPath": "hr_album/resource/images/faxian_selected.png"
+        "text": "首页",
+        "iconPath": "hr_album/resource/images/home.png",
+        "selectedIconPath": "hr_album/resource/images/home-on.png"
+      },
+      {
+        "pagePath": "hr_album/pages/user/user",
+        "text": "教学",
+        "iconPath": "hr_album/resource/images/tech.png",
+        "selectedIconPath": "hr_album/resource/images/tech-on.png"
+      },
+      {
+        "pagePath": "hr_album/pages/user/user",
+        "text": "园盟",
+        "iconPath": "hr_album/resource/images/yuanmeng.png",
+        "selectedIconPath": "hr_album/resource/images/yuanmeng-on.png"
       },
       {
         "pagePath": "hr_album/pages/user/add",
-        "text": "开始创作",
-        "iconPath": "hr_album/resource/images/post.png",
-        "selectedIconPath": "hr_album/resource/images/post.png"
+        "text": "手环",
+        "iconPath": "hr_album/resource/images/shouhuan.png",
+        "selectedIconPath": "hr_album/resource/images/shouhuan-on.png"
       },
       {
         "pagePath": "hr_album/pages/user/user",

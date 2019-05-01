@@ -33,9 +33,5 @@
     <button class="kfbtn" openType="contact" wx:if="{{iskf>0}}">
         <image class="kfimg" src="{{imgurl}}{{kfbg}}" wx:if="{{kfbg}}"></image>
         <image class="kfimg" src="/hr_album/resource/images/kfbtn.png" wx:else></image>
-    </button>
-    <view class="tag">
-        <em></em>
-        <text>点击按钮制作相册</text>
-    </view>
+    </button>   
 </block>
