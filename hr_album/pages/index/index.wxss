@@ -6,12 +6,13 @@
 
 .listbox1 {
     position: relative;
-    height: 550rpx;
+    height: 480rpx;
     width: 350rpx;
     background-color: #FFF;
-    margin-bottom: 20rpx;
+    margin-bottom: 30rpx;
     margin-left: 20rpx;
     float: left;
+    text-align: center;
     box-shadow: 0 10rpx 20rpx rgba(0,0,0,0.1);
 }
 

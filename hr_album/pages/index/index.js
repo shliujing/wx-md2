@@ -86,7 +86,8 @@ Page({
             },
             success: function(a) {
                 if (!a) return !1;
-                if (0 < a.data.length) if (1 == this.data.page) e.setData({
+                a.data.abc = 11;
+                if (0 < a.data.length) if (1 == this.data.page) e.setData({                 
                     hotlist: a.data
                 }); else {
                     var t = e.data.hotlist = e.data.hotlist.concat(a.data);

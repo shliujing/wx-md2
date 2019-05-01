@@ -19,14 +19,6 @@
                 <text class="title" wx:if="{{list_style==1}}">{{items.title}}</text>
                 <image class="bgimg" mode="aspectFill" src="{{imgurl}}{{items.thumb}}"></image>
                 <text class="title" wx:if="{{list_style==2}}">{{items.title}}</text>
-                <image class="avatar" src="{{items.avatar}}"></image>
-                <text class="nickname" wx:if="{{list_style==1}}">{{items.nickname}}</text>
-                <view class="tj">
-                    <image class="tjimg" src="/hr_album/resource/images/ln.png"></image>
-                    <text class="tjsum" wx:if="{{items.click>0}}">{{items.click>100000?'100000+':items.click}}</text>
-                    <image class="tjimg" src="/hr_album/resource/images/shares.png" wx:if="{{items.share>0}}"></image>
-                    <text class="tjsum" wx:if="{{items.share>0}}">{{items.share>100000?'100000+':items.share}}</text>
-                </view>
             </button>
         </scroll-view>
     </view>
