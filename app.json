@@ -17,6 +17,9 @@
     "hr_album/pages/user/details",
     "hr_album/pages/web/index",
     "hr_album/pages/review/review",
+    "hr_album/pages/tech/tech",
+    "hr_album/pages/hand/hand",
+    "hr_album/pages/yuan/yuan",
     "hr_album/pages/zhufu/zhufu"
   ],
   "window": {
@@ -38,19 +41,19 @@
         "selectedIconPath": "hr_album/resource/images/home-on.png"
       },
       {
-        "pagePath": "hr_album/pages/user/user",
+        "pagePath": "hr_album/pages/tech/tech",
         "text": "教学",
         "iconPath": "hr_album/resource/images/tech.png",
         "selectedIconPath": "hr_album/resource/images/tech-on.png"
       },
       {
-        "pagePath": "hr_album/pages/user/user",
+        "pagePath": "hr_album/pages/yuan/yuan",
         "text": "园盟",
         "iconPath": "hr_album/resource/images/yuanmeng.png",
         "selectedIconPath": "hr_album/resource/images/yuanmeng-on.png"
       },
       {
-        "pagePath": "hr_album/pages/user/add",
+        "pagePath": "hr_album/pages/hand/hand",
         "text": "手环",
         "iconPath": "hr_album/resource/images/shouhuan.png",
         "selectedIconPath": "hr_album/resource/images/shouhuan-on.png"
@@ -63,6 +66,10 @@
       }
     ]
   },
-  "debug": false,
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wx6885acbedba59c14",
+    "wxfbeed0e33382ff43"
+  ],
   "sitemapLocation": "sitemap.json"
 }

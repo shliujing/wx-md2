@@ -1,7 +1,7 @@
 <import src="/hr_album/pages/template/login.wxml"></import>
 <template is="login" data wx:if="{{login}}"></template>
 <view class="container" wx:if="{{!login}}">
-    <view class="header" style="background-color: #FFAE03;">
+    <view class="header" style="background-color: #FFDA44;">
         <image bindtap="systems" class="system_tools" src="../../resource/images/sys.png"></image>
         <view class="box">
             <image class="avatar" src="{{userInfo.avatarUrl}}"></image>

@@ -16,7 +16,9 @@ Page({
             screenHeight: app.Data.getSystemInfo.screenHeight
         });
     },
-    onReady: function() {},
+    onReady: function() {
+        //wx.hideTabBar({});
+    },
     onShow: function() {
         var t = this;
         app.getConfig(function(a) {
