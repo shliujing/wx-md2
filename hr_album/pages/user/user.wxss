@@ -25,7 +25,7 @@
   position: absolute;
   top: 130rpx;
   width: 700rpx;
-  height: 230rpx;
+  height: 180rpx;
   left: 28rpx;
   background-color: #fff;
   border-radius: 20rpx;
@@ -299,7 +299,8 @@
   background: #fff;
   margin: 0 auto;
   width: 90%;
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom:1px;
 }
 
 .my-menu-item {
@@ -320,7 +321,7 @@ margin-top:30rpx;
 background-color:#fff;
   flex-direction: column;
   align-items: center; */
-margin-top:1px;
+/* margin-top:1px; */
 padding: 5 5px;
 text-align: center;
 width:90%;
