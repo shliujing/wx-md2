@@ -118,8 +118,9 @@ Page({
         ++this.data.page, this.getpics();
     },
     showAlbum: function(a) {
-        var t = a.currentTarget.dataset.id;
-        console.log(t), app.redirect("show/show", "id=" + t + "&type=show");
+      var t = a.currentTarget.dataset.id;
+      // console.log(t), app.redirect("show/show", "id=" + t + "&type=show");
+      // todo 跳转到相册，参考美女列表 console.log(t), app.redirect("show/show", "id=" + t + "&type=show");
     },
     formSubmit: function(a) {
         console.log(a.detail.formId), app.upForm(a.detail.formId);

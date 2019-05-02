@@ -1,4 +1,4 @@
 <view class="main">
   <!-- <text class="u_text">跳转到小程序</text> -->
-  <button class="button1" bindtap="setMini" type="primary"> 点击跳转到小程序园盟</button>
+  <button class="button1" bindtap="setMini" type=""> 点击跳转到小程序园盟</button>
 </view>

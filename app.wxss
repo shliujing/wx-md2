@@ -624,3 +624,24 @@ button.form_button::after {
     height: 220rpx;
     display: block;
 }
+
+
+
+.button1 {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: white;
+  background-color:#FD5A87;
+  border-radius:10px;
+}

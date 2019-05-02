@@ -1,3 +1,10 @@
 {
-    "navigationBarBackgroundColor": "#FFDA44"
+    "navigationBarBackgroundColor": "#FFDA44",
+      "usingComponents": {
+        "van-button": "../../../dist/button/index",
+        "van-panel": "../../../dist/panel/index",
+        "van-field": "../../../dist/field/index",
+        "van-row": "../../../dist/row/index",
+        "van-col": "../../../dist/col/index"
+      }
 }

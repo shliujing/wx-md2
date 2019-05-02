@@ -23,7 +23,9 @@ Page({
         var a = this;
         return {
             title: a.data.sharetitle,
-            path: "/hr_album/pages/show/show?id=" + a.data.id + "&type=show",
+            // path: "/hr_album/pages/show/show?id=" + a.data.id + "&type=show",
+          path: "/hr_album/pages/index/index",
+
             imageUrl: this.data.thumb,
             success: function(t) {
                 app.shareAction(a.data.id);
