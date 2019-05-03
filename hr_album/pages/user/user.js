@@ -2,9 +2,15 @@ var app = getApp();
 
 Page({
     data: {
-        navname: "user",
-        comid: 0
+      navname: "user",
+      comid: 0,
+      baby: '',
+      userInfo: ''
     },
+  onChange(event) {
+    // event.detail 为当前输入的值
+    console.log(event.detail);
+  },
     onLoad: function() {
         var a = this;
         wx.getSystemInfo({

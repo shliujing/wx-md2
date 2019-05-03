@@ -1,3 +1,9 @@
 {
-  "navigationBarTitleText": "手环"
+  "usingComponents": {
+    "van-field": "../../../dist/field/index",
+    "van-row": "../../../dist/row/index",
+    "van-col": "../../../dist/col/index",
+    "van-button": "../../../dist/button/index"
+  },
+  "navigationBarTitleText": "完善信息"
 }

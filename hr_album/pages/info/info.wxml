@@ -1,4 +1,37 @@
-<view class="main">
-  <!-- <text class="u_text">跳转到小程序</text> -->
-  <button class="button1" bindtap="setMini" type="primary"> 点击跳转到小程序手环 </button>
+<view class="container">
+  <view class="baby-info">
+    <view class="baby-avatar-view">
+      <form bindsubmit="upform" reportSubmit="true">
+        <button catchtap="chooseimg" class="addbox" formType="submit">
+          <view class="iocbox">
+            <image class="imgs" src="../../resource/images/add.png"></image>
+          </view>
+          <text class="descss">添加照片</text>
+        </button>
+      </form>
+
+      <view class="baby-avatar-view">
+        <block wx:for="{{pics}}" wx:key="{{index}}">
+          <image src="{{item}}" class="baby-avatar" data-index="{{index}}" />
+        </block>
+        <!-- <image class="baby-avatar" src="../../resource/images/baby-simple.jpg"></image> -->
+        <!-- <image class="avatar" src="{{baby.avatarUrl}}"></image> -->
+      </view>
+    </view>
+  </view>
+  <view class="baby-info-view">
+    <van-cell-group>
+      <van-field value="{{ userInfo.nickName }}" clearable label="家长姓名" disabled />
+      <van-field value="{{ baby.num }}" label="身份证编号" placeholder="输入与宝贝姓名匹配的学号" required />
+      <van-field value="{{ baby.name }}" label="宝贝姓名" placeholder="根据身份证编号自动匹配" disabled />
+      <van-field value="{{ baby.class }}" label="班级" placeholder="根据身份证编号自动匹配" disabled />
+      <van-field value="{{ baby.school }}" label="学校" placeholder="根据身份证编号自动匹配" disabled border="{{ false }}" />
+    </van-cell-group>
+
+  </view>
+  <view class="baby-button">
+    <van-col span="12"><van-button type="default" bindtap="pipei" size="normal">匹配身份证</van-button></van-col>
+  <van-col span="12"><van-button type="primary" bindtap="tijiao" size="normal">提交</van-button></van-col>   
+    
+  </view>
 </view>

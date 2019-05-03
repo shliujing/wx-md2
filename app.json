@@ -20,6 +20,8 @@
     "hr_album/pages/tech/tech",
     "hr_album/pages/hand/hand",
     "hr_album/pages/yuan/yuan",
+    "hr_album/pages/info/info",
+    "hr_album/pages/photos/photos",
     "hr_album/pages/zhufu/zhufu"
   ],
   "window": {
@@ -41,7 +43,7 @@
         "selectedIconPath": "hr_album/resource/images/home-on.png"
       },
       {
-        "pagePath": "hr_album/pages/tech/tech",
+        "pagePath": "hr_album/pages/info/info",
         "text": "教学",
         "iconPath": "hr_album/resource/images/tech.png",
         "selectedIconPath": "hr_album/resource/images/tech-on.png"
