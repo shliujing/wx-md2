@@ -2,26 +2,31 @@ var app = getApp();
 
 Page({
   data: {
-    message: ""
+    message: "",
+    url: ""
   },
   onLaunch: function() {
-    console.log('App Launch')
+    console.log('App Launch');
   },
 
   onLoad: function(a) {
-    console.log('App onLoad')
+    console.log('App onLoad');
+    var t = this;
+    t.setData({
+      url: "https://a.app.qq.com/o/simple.jsp?pkgname=com.novabracelet"
+    })
   },
   onReady: function() {
-    console.log('App onReady')
+    console.log('App onReady');
   },
   onShow: function() {
-    console.log('App onShow')
+    console.log('App onShow');
   },
   onShareAppMessage: function() {
-    console.log('App onShareAppMessage')
+    console.log('App onShareAppMessage');
   },
   onHide: function() {
-    console.log('App Hide')
+    console.log('App Hide');
   },
   setMini: function(e) {
     wx.navigateToMiniProgram({
