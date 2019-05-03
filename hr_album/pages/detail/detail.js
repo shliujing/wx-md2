@@ -21,21 +21,27 @@ Page({
       method: "post",
       showLoading: !1,
       dataType: "json",
-      data:{
+      data: {
         classify: classify,
         openid: wx.getStorageSync('openid'),
         page: 1,
         schoolid: schoolid,
         searchIndex: searchIndex,
       },
-      success: function (a) {
-        if(!a) return 0;
+      success: function(a) {
+        if (!a) return 0;
         t.setData({
           imgUrls: a.data
         });
       }
     });
     this.stretch(250)
+  },
+  onShow: function() {
+    var t = this;
+    t.setData({
+      imgurl: app.Data.config.imgurl,
+    })
   },
   change(e) {
     this.setData({

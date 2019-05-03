@@ -4,7 +4,7 @@
       <block wx:for="{{imgUrls}}" wx:key='{{index}}'>
         <swiper-item>
           <view class="box" data-index='{{index}}' animation="{{index == current?animationData:animationData2}}">
-            <image src='{{item.url}}'></image>
+            <image src='{{imgurl}}{{item.url}}'></image>
             <!-- <view class='content'>
               <text></text>
               <text></text>
