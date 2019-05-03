@@ -81,6 +81,8 @@ Page({
     var e = this;
     var openid = wx.getStorageSync('openid');
     var baby = wx.getStorageSync('baby');
+    console.log("111");
+    console.log(wx.getStorageSync('userInfo'));
     var schoolid = 0;
     if (baby) {
       schoolid = baby.schoolid;
@@ -100,6 +102,11 @@ Page({
       },
       success: function(a) {
         if (!a) return !1;
+        // {
+        //   e.setData({
+        //     hotlist: []
+        //   });
+        // }
         if (0 < a.data.length)
           if (1 == this.data.page) e.setData({
             hotlist: a.data
@@ -120,7 +127,7 @@ Page({
     // var baby = wx.getStorageSync('baby');
     this.setData({
       searchIndex: x,
-      page : 1
+      page: 1
     });
     app.globalData.searchIndex = x;
     e.getpics();
@@ -174,8 +181,16 @@ Page({
   },
   showAlbum: function(a) {
     var t = a.currentTarget.dataset.id;
-    // console.log(t), app.redirect("show/show", "id=" + t + "&type=show");
+    console.log(t), this.gotodetail(t);
+    // app.redirect("show/show", "id=" + t + "&type=show");
     // todo 跳转到相册，参考美女列表 console.log(t), app.redirect("show/show", "id=" + t + "&type=show");
+  },
+  gotodetail: function(e) {
+    if (!e) return 0;
+    var t = this;
+    wx.navigateTo({
+      url: "/hr_album/pages/detail/detail?classify=" + e.classify + "&searchIndex=" + t.data.searchIndex + "&schoolid=" + e.schoolid, //跳转页面的路径，可带参数 ？隔开，不同参数用 & 分隔；相对路径，不需要.wxml后缀
+    });
   },
   formSubmit: function(a) {
     console.log(a.detail.formId), app.upForm(a.detail.formId);

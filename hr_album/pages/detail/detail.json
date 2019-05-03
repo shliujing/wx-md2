@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-field": "../../../dist/field/index",
+    "van-row": "../../../dist/row/index",
+    "van-col": "../../../dist/col/index",
+    "van-toast": "../../../dist/toast/index",
+    "van-button": "../../../dist/button/index"
+  },
+  "navigationBarTitleText": "照片列表"
+}

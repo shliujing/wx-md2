@@ -39,6 +39,7 @@ Page({
         login: 1
       }), wx.hideTabBar({}));
     };
+    wx.setStorageSync('openid', app.Data.userInfo.openid);
     t.getbaby();
   },
   piclist: function() {
@@ -67,9 +68,9 @@ Page({
         login: 0
       }), a.piclist(), a.showfee(), wx.showTabBar({}));
     }, t.detail);
-    wx.switchTab({
-      url: '/hr_album/pages/index/index'
-    })
+    // wx.switchTab({
+    //   url: '/hr_album/pages/index/index'
+    // })
   },
   gotoshare: function(t) {
     var a = t.currentTarget.dataset.id,
@@ -214,6 +215,7 @@ Page({
             baby: a.data
           });
           app.globalData.baby = a.data;
+          wx.setStorageSync('baby', a.data);
         }else{
           t.systems();
         }

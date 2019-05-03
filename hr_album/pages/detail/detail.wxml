@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="content-view">
+    <swiper  display-multiple-items='1' circular previous-margin='50px' next-margin='50px' bindchange='change' current='{{current}}'>
+      <block wx:for="{{imgUrls}}" wx:key='{{index}}'>
+        <swiper-item>
+          <view class="box" data-index='{{index}}' animation="{{index == current?animationData:animationData2}}">
+            <image src='{{item.url}}'></image>
+            <!-- <view class='content'>
+              <text></text>
+              <text></text>
+            </view> -->
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>

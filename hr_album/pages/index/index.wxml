@@ -23,7 +23,7 @@
       </view>
 
       <ad style="margin-bottom:20rpx;" unitId="{{llads}}" wx:if="{{llads}}"></ad>
-      <button catchtap="showAlbum" class="{{list_style==1?'listbox':'listbox1'}}" data-id="{{items.id}}" wx:for="{{hotlist}}" wx:for-item="items" wx:key="unique">
+      <button catchtap="showAlbum" class="{{list_style==1?'listbox':'listbox1'}}" data-id="{{items}}" wx:for="{{hotlist}}" wx:for-item="items" wx:key="unique">
         <text class="title" wx:if="{{list_style==1}}">{{items.title}}</text>
         <image class="bgimg" mode="aspectFill" src="{{imgurl}}{{items.url}}"></image>
         <text class="title" wx:if="{{list_style==2}}">{{items.title}}</text>

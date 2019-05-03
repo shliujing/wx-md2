@@ -22,6 +22,7 @@
     "hr_album/pages/yuan/yuan",
     "hr_album/pages/info/info",
     "hr_album/pages/photos/photos",
+    "hr_album/pages/detail/detail",
     "hr_album/pages/zhufu/zhufu"
   ],
   "window": {
