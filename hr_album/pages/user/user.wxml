@@ -39,29 +39,27 @@
       </view>
     </block>
   </view>
-
-
   <view class="baby-info">
     <view class="baby-avatar-view">
-      <image class="baby-avatar" src="../../resource/images/baby-simple.jpg"></image>
+      <image class="baby-avatar" src="{{baby.avatar}}"></image>
       <!-- <image class="avatar" src="{{baby.avatarUrl}}"></image> -->
     </view>
     <view class="baby-info-view">
 
       <van-cell-group>
-        <van-field value="刘靖" label="姓名" disabled border="{{ false }}" />
+        <van-field value="{{baby.name}}" label="姓名" disabled border="{{ false }}" />
       </van-cell-group>
 
       <van-cell-group>
-        <van-field value="450221199107211930" label="身份证编号" disabled border="{{ false }}" />
+        <van-field value="{{baby.num}}" label="身份证编号" disabled border="{{ false }}" />
       </van-cell-group>
 
       <van-cell-group>
-        <van-field value="大班" label="班级" disabled border="{{ false }}" />
+        <van-field value="{{baby.classname}}" label="班级" disabled border="{{ false }}" />
       </van-cell-group>
 
       <van-cell-group>
-        <van-field value="小龙人幼儿园" label="学校" disabled border="{{ false }}" />
+        <van-field value="{{baby.schoolname}}" label="学校" disabled border="{{ false }}" />
       </van-cell-group>
     </view>
 

@@ -3,7 +3,8 @@
     "van-field": "../../../dist/field/index",
     "van-row": "../../../dist/row/index",
     "van-col": "../../../dist/col/index",
+    "van-toast": "../../../dist/toast/index",
     "van-button": "../../../dist/button/index"
   },
-  "navigationBarTitleText": "完善信息"
+  "navigationBarTitleText": "匹配信息"
 }

@@ -10,6 +10,7 @@ function _defineProperty(e, t, n) {
 }
 
 App((_defineProperty(_App = {
+
     onLaunch: function() {},
     util: require("we7/util.js"),
     md5: require("we7/md5.js"),
@@ -20,6 +21,9 @@ App((_defineProperty(_App = {
         paydesc: null,
         ver: 4.3
     },
+  globalData: {
+    baby: null,
+  },
     onShow: function() {
         var t = this;
         wx.getStorageSync("deluser") && wx.navigateBack({

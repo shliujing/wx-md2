@@ -43,7 +43,7 @@
         "selectedIconPath": "hr_album/resource/images/home-on.png"
       },
       {
-        "pagePath": "hr_album/pages/info/info",
+        "pagePath": "hr_album/pages/tech/tech",
         "text": "教学",
         "iconPath": "hr_album/resource/images/tech.png",
         "selectedIconPath": "hr_album/resource/images/tech-on.png"
