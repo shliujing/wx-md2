@@ -72,7 +72,8 @@
   "debug": true,
   "navigateToMiniProgramAppIdList": [
     "wx6885acbedba59c14",
-    "wxfbeed0e33382ff43"
+    "wxfbeed0e33382ff43",
+    "wx6d43858882afeb2c"
   ],
   "sitemapLocation": "sitemap.json"
 }

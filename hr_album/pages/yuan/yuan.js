@@ -25,7 +25,7 @@ Page({
   },
   setMini: function(e) {
     wx.navigateToMiniProgram({
-      appId: 'wxfbeed0e33382ff43',
+      appId: 'wx6d43858882afeb2c',
       path: '',
       extraData: {
         foo: 'bar'
