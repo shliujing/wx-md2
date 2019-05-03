@@ -11,7 +11,6 @@ Page({
   onLoad: function(option) {
     console.log(option) //可以打印一下option看查看参数
     var t = this;
-    if (option.page == 'user') {
       app.util.request({
         url: "entry/wxapp/getbaby",
         method: "post",
@@ -27,9 +26,10 @@ Page({
           if (a.data != false) {
             app.globalData.baby = a.data;
           }
+          wx.setStorageSync('baby', a.data);
+          wx.setStorageSync('openid', app.Data.userInfo.openid);
         }
       });
-    }
     if (wx.getSystemInfo({
         success: function(a) {
           t.setData({

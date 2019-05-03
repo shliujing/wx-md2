@@ -23,6 +23,7 @@ App((_defineProperty(_App = {
     },
   globalData: {
     baby: null,
+    searchIndex: 0
   },
     onShow: function() {
         var t = this;

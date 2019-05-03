@@ -16,15 +16,10 @@
         </swiper-item>
       </swiper>
 
-      <view class="u_list">
-        <view class="u_items">
-          <image class="u_icos" src="../../resource/images/album.png"></image>
-          <text class="u_text1">我的宝贝</text>
-        </view>
-        <view class="u_after"></view>
-        <view class="u_items">
-          <image class="u_icos" src="../../resource/images/xin.png"></image>
-          <text class="u_text1">小龙人幼儿园</text>
+      <view class="do-type-box">
+        <view class="do-type">
+          <text class="{{searchIndex == 0 ? 'actice-style' : ''}}" catchtap="tapSelectResource" data-index="0">我的宝贝</text>
+          <text class="{{searchIndex == 1 ? 'actice-style' : ''}}" catchtap="tapSelectResource" data-index="1">小龙人幼儿园</text>
         </view>
       </view>
 
@@ -41,7 +36,7 @@
     <image class="kfimg" src="/hr_album/resource/images/kfbtn.png" wx:else></image>
   </button>
 
-      <!-- <view class="navbar">
+  <!-- <view class="navbar">
         <view class="navbar_a">
           <image class="u_icos" src="../../resource/images/album.png"></image>
           <text class="u_text1">我的宝贝</text>
