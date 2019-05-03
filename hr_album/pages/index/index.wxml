@@ -7,7 +7,6 @@
   <template is="review" data="{{aclist:aclist}}"></template>
 </block>
 <block wx:if="{{review==0}}">
-
   <view class="pagebox">
     <scroll-view bindscrolltolower="scrolltolower" lowerThreshold="20" scrollTop="{{scrollTop}}" scrollWithAnimation="true" scrollY="true" style="height:{{screenHeight}}px;">
       <swiper autoplay="{{autoplay}}" class="swiper" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}" wx:if="{{ads.length>0}}">
@@ -24,10 +23,10 @@
       </view>
 
       <ad style="margin-bottom:20rpx;" unitId="{{llads}}" wx:if="{{llads}}"></ad>
-      <button catchtap="showAlbum" class="{{list_style==1?'listbox':'listbox1'}}" data-id="{{items.id}}" data-skin="{{items.skin}}" wx:for="{{hotlist}}" wx:for-item="items" wx:key="unique">
+      <button catchtap="showAlbum" class="{{list_style==1?'listbox':'listbox1'}}" data-id="{{items.id}}" wx:for="{{hotlist}}" wx:for-item="items" wx:key="unique">
         <text class="title" wx:if="{{list_style==1}}">{{items.title}}</text>
-        <image class="bgimg" mode="aspectFill" src="{{imgurl}}{{items.thumb}}"></image>
-        <text class="title" wx:if="{{list_style==2}}">{{items.str}}</text>
+        <image class="bgimg" mode="aspectFill" src="{{imgurl}}{{items.url}}"></image>
+        <text class="title" wx:if="{{list_style==2}}">{{items.title}}</text>
       </button>
     </scroll-view>
   </view>

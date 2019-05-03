@@ -88,7 +88,7 @@ Page({
     var searchIndex = e.data.searchIndex;
 
     app.util.request({
-      url: "entry/wxapp/picslist",
+      url: "entry/wxapp/homelist",
       method: "post",
       dataType: "json",
       showLoading: !1,
@@ -119,7 +119,8 @@ Page({
     var x = a.currentTarget.dataset.index;
     // var baby = wx.getStorageSync('baby');
     this.setData({
-      searchIndex: x
+      searchIndex: x,
+      page : 1
     });
     app.globalData.searchIndex = x;
     e.getpics();
