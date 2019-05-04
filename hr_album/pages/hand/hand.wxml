@@ -1,5 +1,7 @@
-<!-- <view class="main">
-  <button class="button1" bindtap="setMini" type=""> 点击跳转到小程序手环 </button>
-</view> -->
+<view class="main">
+<text class='main_text'>请在华为应用商店或苹果 app store 搜索\t「智育」\t下载 app 客户端</text>
+  <!-- <button class="button1" bindtap="setMini" type=""> 点击跳转到小程序手环 </button> -->
+</view>
 
-<web-view src="{{url}}"></web-view>
+<!-- <web-view src="{{url}}"></web-view> -->
+

@@ -6,3 +6,9 @@
   height: 100%;
   position: absolute;
 }
+
+.main_text{
+  width:80%;
+  font-size:30rpx;
+padding:10px 10px 10px 10px;
+}

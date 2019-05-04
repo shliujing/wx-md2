@@ -34,7 +34,7 @@
       <view class="my-menu-box links">
         <view class="my-menu-item" catchtap="onNavigateTap" data-name="我的宝贝" data-url="{{item.link}}">
           <image class="u_icos" src="../../resource/images/baby-on.png"></image>
-          <text>我的宝贝</text>
+          <text class="mybaby">我的宝贝</text>
         </view>
       </view>
     </block>
@@ -44,25 +44,25 @@
       <image class="baby-avatar" src="{{baby.avatar}}"></image>
       <!-- <image class="avatar" src="{{baby.avatarUrl}}"></image> -->
     </view>
-    <view class="baby-info-view">
+    <view class="w100">
+      <view class="baby-info-view">
+        <van-cell-group>
+          <van-field value="{{baby.name}}" label="姓名" disabled border="{{ false }}" />
+        </van-cell-group>
 
-      <van-cell-group>
-        <van-field value="{{baby.name}}" label="姓名" disabled border="{{ false }}" />
-      </van-cell-group>
+        <van-cell-group>
+          <van-field value="{{baby.num}}" label="身份证编号" disabled border="{{ false }}" />
+        </van-cell-group>
 
-      <van-cell-group>
-        <van-field value="{{baby.num}}" label="身份证编号" disabled border="{{ false }}" />
-      </van-cell-group>
+        <van-cell-group>
+          <van-field value="{{baby.classname}}" label="班级" disabled border="{{ false }}" />
+        </van-cell-group>
 
-      <van-cell-group>
-        <van-field value="{{baby.classname}}" label="班级" disabled border="{{ false }}" />
-      </van-cell-group>
-
-      <van-cell-group>
-        <van-field value="{{baby.schoolname}}" label="学校" disabled border="{{ false }}" />
-      </van-cell-group>
+        <van-cell-group>
+          <van-field value="{{baby.schoolname}}" label="学校" disabled border="{{ false }}" />
+        </van-cell-group>
+      </view>
     </view>
-
   </view>
 
   <!-- <button class="kfbtn" openType="contact" style="{{config.mapp>0?'':'bottom:20rpx;'}}" wx:if="{{config.iskf>0}}">

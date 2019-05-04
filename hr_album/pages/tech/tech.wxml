@@ -1,5 +1,5 @@
-<!-- <view class="main">
-  <button class="button1" bindtap="setMini" type=""> 点击跳转到小程序教学 </button>
-</view> -->
+<view class="main">
+<text class="main_text">请通过微信搜索公众号\t「园盟 Edu」\t通过菜单栏\t「爱吾宝」\t进入</text>
+</view>
 
 <!-- <web-view src="{{url}}"></web-view> -->
